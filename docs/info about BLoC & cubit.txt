@@ -1,0 +1,71 @@
+BLoC: for state management 
+- UI send "events" to bloc then bloc send "states" to UI
+
+======= installing 
+dependencies:
+  flutter_bloc: ^version
+
+======= BLoC
+
+
+
+********************************************** Apps
+
+===== counter
+
+- what is bloc
+- install extensions: bloc ( to create files of Bloc: bloc, event, state)
+- event: // events is what happen when do this example when click on button
+- state: // state: state of certain value, or variable will changes
+
+* overview
+- Bloc provider : top level : BlocPovider => MaterialApp
+- BlocBuilder<Bloc, State>( builder: (context, state) {},),
+- BlocProvider.of<Bloc>(context).add(Event());
+* Bloc files
+- events as classes
+- states as object or contain values
+- apply changes and input(events) , outpus(states)
+
+===== Localization 
+- what is cubit ( states, functions)
+- functions: to change value
+- state: get changed value
+- use cubit(states, functions) and shared preferences
+- use consumer (builder, listener)
+- Multi Bloc Provider
+* 
+- add more than one language to app
+- how can create extensions on (string,  ..)
+
+
+===== check internet connection
+- to check used: connectivity_plus package
+- apply with bloc and cubit
+- use snackBar width
+
+==== theme
+- to change theme of app
+- equatable package: to comaper between to object with same data
+- learn about enum in dart
+- save theme by Shared Preferences
+- use extension to use event in bloc =>  context.read<BlocName>().add(EventName());
+- learn about ThemeData
+
+==== Fetching Data From API with use Bloc
+- use json
+- handle errors
+- use "http" package
+- get api from (json placeholder)
+-  Debug and Observe in bloc (trace)
+
+==== infinite scroll
+- write file state with different way 
+- use bloc concurrency package ( droppable event transformer )
+- use API with start & limit get data
+- learn about ScrollController and create Listener and use ( initState, dispose)
+
+
+
+====
+
